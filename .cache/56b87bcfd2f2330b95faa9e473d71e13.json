@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"_css_loader"}],"generated":{"css":".grid {\n  margin-top: 60px;\n}\n.predict {\n  background-color: #DEF4E5;\n  padding: 12px;\n}\n","js":"\n        var reloadCSS = require('_css_loader');\n        module.hot.dispose(reloadCSS);\n        module.hot.accept(reloadCSS);\n      "},"hash":"3b9ac02e27cc76de1e6fd985a13672f3","cacheData":{}}

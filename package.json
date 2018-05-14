@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Riza Fahmi <rizafahmi@gmail.com> (https://rizafahmi.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs": "0.10.3"
+  }
 }
