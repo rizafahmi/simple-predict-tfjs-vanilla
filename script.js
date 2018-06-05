@@ -8,8 +8,12 @@ model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
 model.compile({ loss: "meanSquaredError", optimizer: "sgd" });
 
 // Provide some housing data
-const xs = tf.tensor1d([7.9, 8.5, 9.0, 9.6, 9.7, 11.7]);
-const ys = tf.tensor1d([1036651, 1086481, 1128006, 1177836, 1186141, 1352241]);
+const xs = tf.tensor1d([
+  7.9, 8.5, 9.0, 9.6, 9.7, 11.7
+]);
+const ys = tf.tensor1d([
+  1036651, 1086481, 1128006, 1177836, 1186141, 1352241
+]);
 
 // Train the model using the data provided
 model.fit(xs, ys).then(() => {
@@ -21,8 +25,9 @@ model.fit(xs, ys).then(() => {
     e.preventDefault();
     // Use the model to predict or to inference
     const output = model.predict(
-      tf.tensor2d([parseFloat(inputText.value) / 10], [1, 1])
-    );
+      tf.tensor2d(
+        [parseFloat(inputText.value) / 10], [1, 1]
+      ));
     predictPlaceholder.innerHTML = formatting(Array.from(output.dataSync())[0]);
   });
 });

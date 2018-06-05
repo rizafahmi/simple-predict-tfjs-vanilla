@@ -3,20 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>TensorflowJS</title>
-    <link rel="stylesheet" href="/application.04f1c497.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/style.76fd6db7.css" type="text/css" media="screen" charset="utf-8">
-  <script src="/application.04f1c497.js"></script><script src="/style.76fd6db7.js"></script></head>
+  <script src="/style.76fd6db7.js"></script></head>
   <body>
-    <div class="grid">
-      <h1>Drop Dead Simple House Price Prediction</h1>
-      <h3>With Tensorflow.js</h3>
-      <h2>
-        Predicted price: Rp. <span id="predict" class="predict"> 1000000 </span>
-      </h2>
-      <form id="myform">
-        <input id="inputText" required="" type="number" class="form__input" placeholder="size of the land in m2">
-    </form>
+    <div class="bx--grid container">
+      <div class="bx--row">
+        <h1>Drop Dead Simple House Price Prediction</h1>
+      </div>
+      <div class="bx--row page-header">
+        <h3>With Tensorflow.js</h3>
+      </div>
+
+      <div class="bx--row container">
+        <h2>
+          Predicted price: Rp. <span id="predict" class="predict"> 1.000.000 </span>
+        </h2>
+      </div>
+      <div class="bx--row container">
+        <form id="myform" class="bx--form-item">
+          <input id="inputText" required="" type="number" class="bx--text-input" placeholder="size of the land in m2">
+          <label for="text-input-3" class="bx--label">Input Your desired house size</label>
+        </form>
+      </div>
     </div>
+    <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
     <script src="/script.79f22bdf.js"></script>
   </body>
 </html>

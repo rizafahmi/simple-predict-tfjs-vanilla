@@ -5,3 +5,11 @@
   background-color: #DEF4E5;
   padding: 12px;
 }
+.page-header {
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #3057D5;
+}
+
+.container {
+  margin-top: 64px;
+}
