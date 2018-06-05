@@ -9,10 +9,10 @@ model.compile({ loss: "meanSquaredError", optimizer: "sgd" });
 
 // Provide some housing data
 const xs = tf.tensor1d([
-  7.9, 8.5, 9.0, 9.6, 9.7, 11.7
+  7.9, 8.1, 8.3, 8.5, 8.6, 8.4
 ]);
 const ys = tf.tensor1d([
-  1036651, 1086481, 1128006, 1177836, 1186141, 1352241
+  738967, 742371, 750984, 759598, 763905, 755291
 ]);
 
 // Train the model using the data provided

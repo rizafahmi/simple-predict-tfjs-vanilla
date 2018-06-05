@@ -25030,8 +25030,8 @@ model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
 model.compile({ loss: "meanSquaredError", optimizer: "sgd" });
 
 // Provide some housing data
-var xs = tf.tensor1d([7.9, 8.5, 9.0, 9.6, 9.7, 11.7]);
-var ys = tf.tensor1d([1036651, 1086481, 1128006, 1177836, 1186141, 1352241]);
+var xs = tf.tensor1d([7.9, 8.1, 8.3, 8.5, 8.6, 8.4]);
+var ys = tf.tensor1d([738967, 742371, 750984, 759598, 763905, 755291]);
 
 // Train the model using the data provided
 model.fit(xs, ys).then(function () {
@@ -25051,7 +25051,7 @@ var formatting = function formatting(num) {
   num *= 1000;
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 };
-},{"@tensorflow/tfjs":16}],161:[function(require,module,exports) {
+},{"@tensorflow/tfjs":16}],164:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -25221,5 +25221,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[161,6], null)
+},{}]},{},[164,6], null)
 //# sourceMappingURL=/script.79f22bdf.map
